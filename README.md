@@ -38,8 +38,6 @@
 
 Проверяем статус firewalld и selinux
 
-Способ 1.
-
 ```
 hunter@Hunter:~/HW13$ vagrant ssh
 [vagrant@selinux ~]$ sudo -i
@@ -54,6 +52,9 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 [root@selinux ~]# getenforce
 Enforcing
 ```
+
+Способ 1.
+
 В файле лога /var/log/audit/audit.log ищем запись о блокировке порта 4881
 ```
 [root@selinux ~]# less /var/log/audit/audit.log | grep 4881
